@@ -468,6 +468,9 @@ class TextEditor extends Model
   onDidLoad: (callback) ->
     @displayBuffer.onDidLoad(callback)
 
+  onDidChangeLoadProgress: (callback) ->
+    @displayBuffer.onDidChangeLoadProgress(callback)
+
   getLoadProgress: ->
     @displayBuffer.getLoadProgress()
 
